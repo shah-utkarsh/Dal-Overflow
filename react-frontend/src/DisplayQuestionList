@@ -1,0 +1,17 @@
+import React from 'react';
+import QuestionList from './QuestionList';
+
+function DisplayQuestionList(props) {
+  console.log('QuestionList props:', props);
+  return (
+    <ul>
+      {props.questions.map((question) => (
+        <li key={question.questionId}>
+          <QuestionList question={question} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default DisplayQuestionList;

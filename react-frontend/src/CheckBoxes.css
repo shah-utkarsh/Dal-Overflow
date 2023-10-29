@@ -1,0 +1,23 @@
+.checkbox-label {
+    font-size: 22px; 
+  }
+  
+  .checkbox-text {
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .ql-formats{
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .ql-code-block{
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .ql-placeholder{
+    font-size: 15px;
+    color: #fff;
+  }

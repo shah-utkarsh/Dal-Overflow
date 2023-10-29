@@ -1,0 +1,74 @@
+This doc will be deleted later and is for temporary usage.
+It is jst for recording the incremental changes that we would need in the project to make it more robust.
+
+Database:
+1)The primary ke column is varchar. would be better if its text. the PK should be auto increment in the database.
+2)Check the logic behind the random pk generated in the seeding data if that is needed.
+3) we might have to change the seed data to accommodate the changes in the PK.
+
+Utils class:
+We have added a basic utility class DALOUtility to the project.
+Add the basic utilities like encyrption logic, basic parsers to this class.
+The methods should be static so that it can be used appropriately.
+
+VM:
+We need to upgrade the openjdk version of the VM to accommodate latest java files being complied and pushed to the repo.
+
+Question table:
+we need have a column for question status. I.e if the question is already answered.
+we need to fetch answer count somewhere.i.e how many answers are there to a particular question.
+
+Answer table :
+we currently have a_status table whic will indicate if this is the answer selected by the user
+default value should be false.
+once the question user marks this answer correct, then the value should be marked true.
+
+Editing a question:
+we should let the user who is posting the question to edit and delete the question posted.
+similarly we should also the user who is posting th answer to edit and delete the answer if its not marked answered by the question user.
+
+we need to add comments module to the question answer thread.
+
+How will the user posting the question decide which answer to select.
+we need a UI component to select an answer from the list of answers which also marks the question complete.
+
+
+
+
+15th March:
+Next Sprint:
+Comment functionality API--UT
+Comment functionality UI components and integration--MV
+More test classes for validations---SN, UT, RK
+UI component refresh---MV
+UI validations -- SB
+Search mechanism backend services.--SR
+Answer posting integration and testing -- RK
+Tokenization -- less priority
+Search result page with pagination -- SB
+Linking the search result to questionAnswer thread API and UI components--SB, MV
+
+Supporting essential developments:
+Refactoring and optimizing querying -- all
+Integrating additional question UI components to backend api -- SR
+CI pipeline for code smells -- SR
+Setting up the VM -- SR
+Setting up the Webserver -- MV/SB
+Log enhancements -- SR
+More Custom Exception -- UT, SR, RT
+
+Next Sprint:
+User Profile Screen -- SB/MV
+User Profile Screen Backend -- anyone UT,RT, SR
+Coverage report mechanism -- anyone
+Deleting a post by the user who has posted it.
+Voting Mechanism
+Tagging mechanism upgrades.
+backlogs from previous sprints
+Ensuring rubrics checklist
+documentations
+full blown integration validation setup
+Environment based application setup.
+
+Furutre Scope:
+editing a post might be a challenge
